@@ -1,0 +1,1805 @@
+/*************** DÉFINITION DES FONTS **************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+/* Roboto Regular */
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300&family=Roboto+Condensed&display=swap');
+/* Lexend Light */
+
+/*************** PARAMETRES BODY ************************************/
+body {
+    background-color: #FFFFFF;
+    margin: 0;
+}
+
+section {
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+p {
+    font-family: 'Lexend', sans-serif;
+}
+
+hr {
+    background-color: blue;
+    border: 0;
+    border-radius: 100%;
+    width: 90%;
+    height: 2px;
+    margin: auto;
+}
+
+
+/************************************************************/
+/******* CSS À APPLIQUER AU ÉCRAN ENTRE 320px et 399px ******/
+/************************************************************/
+
+
+@media screen and (max-width: 399px) {
+
+    /* HEADER */
+
+    header {
+        display: flex;
+        position: relative;
+        align-items: flex-start;
+        border-bottom: 1px solid #000000;
+    }
+
+    .logosHeader {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .fas.fa-bars {
+        display: none;
+        position: absolute;
+        top: 25%;
+        right: 10%;
+        font-size: 0.8rem;
+        transition-duration: 0.5s;
+        /* transition pour la rotation */
+        transition-timing-function: ease-in-out;
+    }
+
+    /* classe qui permet la rotation du font-awesome avec le script Js */
+    .rotated {
+        -webkit-transform: rotate(90deg);
+        /* Chrome, Safari 3.1+ */
+        -moz-transform: rotate(90deg);
+        /* Firefox 3.5-15 */
+        -ms-transform: rotate(90deg);
+        /* IE 9 */
+        -o-transform: rotate(90deg);
+        /* Opera 10.50-12.00 */
+        transform: rotate(90deg);
+        /* Firefox 16+, IE 10+, Opera 12.10+ */
+    }
+
+    header img {
+        height: 40px;
+        width: auto;
+    }
+
+    nav {
+        width: 100%;
+        height: 60px;
+        margin: 0 auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        text-align: center;
+        position: relative;
+    }
+
+    nav ul {
+        padding: 0;
+        margin: 0 auto;
+        position: absolute;
+        top: 40%;
+        left: 5%;
+    }
+
+    nav ul li {
+        display: inline;
+        list-style: none;
+    }
+
+    li a {
+        font-size: 0.6rem;
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+        font-family: "Ubuntu", sans-serif;
+        margin-left: 15px;
+    }
+
+    li a:hover {
+        text-decoration: underline;
+    }
+
+    /****************************************************************/
+    /***********************   SLIDER / PRESENTATION  ***************/
+    /****************************************************************/
+
+    #accueil {
+        position: relative;
+        height: 200px;
+        overflow: hidden;
+    }
+
+    /* ************** Les éléments du slider ************** */
+
+
+    /* classe pour activer une image */
+    .figureSlider.active {
+        display: block;
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        filter: alpha(opacity=1);
+    }
+
+    /* cacher toutes les autres images */
+    .figureSlider {
+        position: absolute;
+        width: 100%;
+        -webkit-transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -o-transition: opacity 1s ease-in-out;
+        transition: opacity 1s ease-in-out;
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        filter: alpha(opacity=0);
+    }
+
+    .titre {
+        margin-bottom: 50px;
+        background-color: #2a66b5;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        border-top: 1px solid #000000;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        color: #FFFFFF;
+    }
+
+    /* Section Présentation */
+
+    #presentation {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .plumbering {
+        margin-bottom: 15px;
+    }
+
+    .pipes {
+        width: 50%;
+        overflow: hidden;
+        float: left;
+        margin-right: 10px;
+
+    }
+
+    .pipes img {
+        max-width: 100%;
+    }
+
+    .electricity {
+        margin-bottom: 15px;
+    }
+
+    .elec {
+        width: 50%;
+        overflow: hidden;
+        float: right;
+        margin-left: 10px;
+    }
+
+    .elec img {
+        max-width: 100%;
+    }
+
+    .heating {
+        margin-bottom: 15px;
+    }
+
+    .boiler {
+        width: 50%;
+        overflow: hidden;
+        float: left;
+        margin-right: 10px;
+    }
+
+    .boiler img {
+        max-width: 100%;
+    }
+
+    /* Bannière Logos partenaires */
+
+    .banner {
+        height: 100px;
+        border-top: solid #7510f7 1px;
+        border-bottom: solid #7510f7 1px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner img {
+        height: 50px;
+    }
+
+    
+    /* SECTION CONTACT */
+    
+    #contact {
+        text-align: center;
+    }
+
+    .titreContact h2 {
+        font-size: 1.7rem;
+        color: #000000;
+    }
+
+    .titreContact p {
+        font-size: 0.7em;
+        color: #000000;
+    }
+
+    .formulaire {
+        margin-top: 50px;
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    form input {
+        height: 20px;
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+
+    form textarea {
+        height: 125px;
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+
+    form label {
+        font-size: 1.5em;
+    }
+
+    #name,
+    #mail,
+    #subject,
+    #message {
+        width: 100%;
+    }
+
+    form fieldset {
+        padding: 0 20px 20px 20px;
+        margin-bottom: 10px;
+        border: 1px solid #7510f7;
+    }
+
+    form legend {
+        font-size: 1.8em;
+    }
+
+    #submit {
+        font-size: 1em;
+        height: 25px;
+    }
+
+    .adresse h3 {
+        font-size: 2rem;
+        margin-bottom: 25px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+    /* Footer */
+
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: blue;
+    }
+
+    .copyright {
+        color: #000000;
+        font-size: 0.5rem;
+    }
+
+    
+
+}
+
+/************************************************************/
+/******* CSS À APPLIQUER AU ÉCRAN ENTRE 400px et 768px ******/
+/************************************************************/
+
+
+@media screen and (min-width: 400px) and (max-width: 768px) {
+
+    /* HEADER */
+
+    header {
+        display: flex;
+        position: relative;
+        align-items: flex-start;
+        border-bottom: 1px solid #000000;
+    }
+
+    .logosHeader {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .fas.fa-bars {
+        display: none;
+        position: absolute;
+        top: 25%;
+        right: 10%;
+        font-size: 0.8rem;
+        transition-duration: 0.5s;
+        /* transition pour la rotation */
+        transition-timing-function: ease-in-out;
+    }
+
+    /* classe qui permet la rotation du font-awesome avec le script Js */
+    .rotated {
+        -webkit-transform: rotate(90deg);
+        /* Chrome, Safari 3.1+ */
+        -moz-transform: rotate(90deg);
+        /* Firefox 3.5-15 */
+        -ms-transform: rotate(90deg);
+        /* IE 9 */
+        -o-transform: rotate(90deg);
+        /* Opera 10.50-12.00 */
+        transform: rotate(90deg);
+        /* Firefox 16+, IE 10+, Opera 12.10+ */
+    }
+
+    header img {
+        height: 40px;
+        width: auto;
+    }
+
+    nav {
+        width: 100%;
+        height: 60px;
+        margin: 0 auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        text-align: center;
+        position: relative;
+    }
+
+    nav ul {
+        padding: 0;
+        margin: 0 auto;
+        position: absolute;
+        top: 40%;
+        left: 5%;
+    }
+
+    nav ul li {
+        display: inline;
+        list-style: none;
+    }
+
+    li a {
+        font-size: 0.6rem;
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+        font-family: "Ubuntu", sans-serif;
+        margin-left: 15px;
+    }
+
+    li a:hover {
+        text-decoration: underline;
+    }
+
+    /****************************************************************/
+    /***********************   SLIDER / PRESENTATION  ***************/
+    /****************************************************************/
+
+    #accueil {
+        position: relative;
+        height: 200px;
+        overflow: hidden;
+    }
+
+    /* ************** Les éléments du slider ************** */
+
+
+    /* classe pour activer une image */
+    .figureSlider.active {
+        display: block;
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        filter: alpha(opacity=1);
+    }
+
+    /* cacher toutes les autres images */
+    .figureSlider {
+        position: absolute;
+        width: 100%;
+        -webkit-transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -o-transition: opacity 1s ease-in-out;
+        transition: opacity 1s ease-in-out;
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        filter: alpha(opacity=0);
+    }
+
+    .titre {
+        margin-bottom: 50px;
+        background-color: #2a66b5;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        border-top: 1px solid #000000;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        color: #FFFFFF;
+    }
+
+    /* Section Présentation */
+
+    #presentation {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .plumbering {
+        margin-bottom: 15px;
+    }
+
+    .pipes {
+        width: 50%;
+        overflow: hidden;
+        float: left;
+        margin-right: 10px;
+
+    }
+
+    .pipes img {
+        max-width: 100%;
+    }
+
+    .electricity {
+        margin-bottom: 15px;
+    }
+
+    .elec {
+        width: 50%;
+        overflow: hidden;
+        float: right;
+        margin-left: 10px;
+    }
+
+    .elec img {
+        max-width: 100%;
+    }
+
+    .heating {
+        margin-bottom: 15px;
+    }
+
+    .boiler {
+        width: 50%;
+        overflow: hidden;
+        float: left;
+        margin-right: 10px;
+    }
+
+    .boiler img {
+        max-width: 100%;
+    }
+
+    /* Bannière Logos partenaires */
+
+    .banner {
+        height: 100px;
+        border-top: solid #7510f7 1px;
+        border-bottom: solid #7510f7 1px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner img {
+        height: 50px;
+    }
+
+    
+    /* SECTION CONTACT */
+    
+    #contact {
+        text-align: center;
+    }
+
+    .titreContact h2 {
+        font-size: 1.7rem;
+        color: #000000;
+    }
+
+    .titreContact p {
+        font-size: 0.7em;
+        color: #000000;
+    }
+
+    .formulaire {
+        margin-top: 50px;
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    form input {
+        height: 20px;
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+
+    form textarea {
+        height: 125px;
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+
+    form label {
+        font-size: 1.5em;
+    }
+
+    #name,
+    #mail,
+    #subject,
+    #message {
+        width: 100%;
+    }
+
+    form fieldset {
+        padding: 0 20px 20px 20px;
+        margin-bottom: 10px;
+        border: 1px solid #7510f7;
+    }
+
+    form legend {
+        font-size: 1.8em;
+    }
+
+    #submit {
+        font-size: 1em;
+        height: 25px;
+    }
+
+    .adresse h3 {
+        font-size: 2rem;
+        margin-bottom: 25px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+    /* Footer */
+
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: blue;
+    }
+
+    .copyright {
+        color: #000000;
+        font-size: 0.5rem;
+    }
+
+    
+
+}
+
+/************************************************************/
+/******* CSS À APPLIQUER AU ÉCRAN ENTRE 769px et 1024px ******/
+/************************************************************/
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    /* HEADER */
+
+    header {
+        display: flex;
+        position: relative;
+        align-items: flex-start;
+        border-bottom: 1px solid #000000;
+    }
+
+    .logosHeader {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .fas.fa-bars {
+        display: none;
+        position: absolute;
+        top: 25%;
+        right: 10%;
+        font-size: 0.8rem;
+        transition-duration: 0.5s;
+        /* transition pour la rotation */
+        transition-timing-function: ease-in-out;
+    }
+
+    /* classe qui permet la rotation du font-awesome avec le script Js */
+    .rotated {
+        -webkit-transform: rotate(90deg);
+        /* Chrome, Safari 3.1+ */
+        -moz-transform: rotate(90deg);
+        /* Firefox 3.5-15 */
+        -ms-transform: rotate(90deg);
+        /* IE 9 */
+        -o-transform: rotate(90deg);
+        /* Opera 10.50-12.00 */
+        transform: rotate(90deg);
+        /* Firefox 16+, IE 10+, Opera 12.10+ */
+    }
+
+    header img {
+        height: 40px;
+        width: auto;
+    }
+
+    nav {
+        width: 100%;
+        height: 60px;
+        margin: 0 auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        text-align: center;
+        position: relative;
+    }
+
+    nav ul {
+        padding: 0;
+        margin: 0 auto;
+        position: absolute;
+        top: 40%;
+        left: 5%;
+    }
+
+    nav ul li {
+        display: inline;
+        list-style: none;
+    }
+
+    li a {
+        font-size: 0.6rem;
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+        font-family: "Ubuntu", sans-serif;
+        margin-left: 15px;
+    }
+
+    li a:hover {
+        text-decoration: underline;
+    }
+
+    /****************************************************************/
+    /***********************   SLIDER / PRESENTATION  ***************/
+    /****************************************************************/
+
+    #accueil {
+        position: relative;
+        height: 200px;
+        overflow: hidden;
+    }
+
+    /* ************** Les éléments du slider ************** */
+
+
+    /* classe pour activer une image */
+    .figureSlider.active {
+        display: block;
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        filter: alpha(opacity=1);
+    }
+
+    /* cacher toutes les autres images */
+    .figureSlider {
+        position: absolute;
+        width: 100%;
+        -webkit-transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -o-transition: opacity 1s ease-in-out;
+        transition: opacity 1s ease-in-out;
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        filter: alpha(opacity=0);
+    }
+
+    .titre {
+        margin-bottom: 50px;
+        background-color: #2a66b5;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        border-top: 1px solid #000000;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        color: #FFFFFF;
+    }
+
+    /* Section Présentation */
+
+    #presentation {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .plumbering {
+        margin-bottom: 15px;
+    }
+
+    .pipes {
+        width: 50%;
+        overflow: hidden;
+        float: left;
+        margin-right: 10px;
+
+    }
+
+    .pipes img {
+        max-width: 100%;
+    }
+
+    .electricity {
+        margin-bottom: 15px;
+    }
+
+    .elec {
+        width: 50%;
+        overflow: hidden;
+        float: right;
+        margin-left: 10px;
+    }
+
+    .elec img {
+        max-width: 100%;
+    }
+
+    .heating {
+        margin-bottom: 15px;
+    }
+
+    .boiler {
+        width: 50%;
+        overflow: hidden;
+        float: left;
+        margin-right: 10px;
+    }
+
+    .boiler img {
+        max-width: 100%;
+    }
+
+    /* Bannière Logos partenaires */
+
+    .banner {
+        height: 100px;
+        border-top: solid #7510f7 1px;
+        border-bottom: solid #7510f7 1px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner img {
+        height: 50px;
+    }
+
+    
+    /* SECTION CONTACT */
+    
+    #contact {
+        text-align: center;
+    }
+
+    .titreContact h2 {
+        font-size: 1.7rem;
+        color: #000000;
+    }
+
+    .titreContact p {
+        font-size: 0.7em;
+        color: #000000;
+    }
+
+    .formulaire {
+        margin-top: 50px;
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    form input {
+        height: 20px;
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+
+    form textarea {
+        height: 125px;
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+
+    form label {
+        font-size: 1.5em;
+    }
+
+    #name,
+    #mail,
+    #subject,
+    #message {
+        width: 100%;
+    }
+
+    form fieldset {
+        padding: 0 20px 20px 20px;
+        margin-bottom: 10px;
+        border: 1px solid #7510f7;
+    }
+
+    form legend {
+        font-size: 1.8em;
+    }
+
+    #submit {
+        font-size: 1em;
+        height: 25px;
+    }
+
+    .adresse h3 {
+        font-size: 2rem;
+        margin-bottom: 25px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+    /* Footer */
+
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: blue;
+    }
+
+    .copyright {
+        color: #000000;
+        font-size: 0.5rem;
+    }
+
+    
+
+}
+
+/************************************************************/
+/******* CSS À APPLIQUER AU ÉCRAN ENTRE 1025px et 1400px ******/
+/************************************************************/
+
+
+@media screen and (min-width: 1025px) and (max-width: 1400px) {
+
+    /* HEADER */
+
+    header {
+        display: flex;
+        position: relative;
+        align-items: flex-start;
+        border-bottom: 1px solid #000000;
+    }
+
+    .logosHeader {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .fas.fa-bars {
+        display: none;
+        position: absolute;
+        top: 25%;
+        right: 10%;
+        font-size: 0.8rem;
+        transition-duration: 0.5s;
+        /* transition pour la rotation */
+        transition-timing-function: ease-in-out;
+    }
+
+    /* classe qui permet la rotation du font-awesome avec le script Js */
+    .rotated {
+        -webkit-transform: rotate(90deg);
+        /* Chrome, Safari 3.1+ */
+        -moz-transform: rotate(90deg);
+        /* Firefox 3.5-15 */
+        -ms-transform: rotate(90deg);
+        /* IE 9 */
+        -o-transform: rotate(90deg);
+        /* Opera 10.50-12.00 */
+        transform: rotate(90deg);
+        /* Firefox 16+, IE 10+, Opera 12.10+ */
+    }
+
+    header img {
+        height: 40px;
+        width: auto;
+    }
+
+    nav {
+        width: 100%;
+        height: 60px;
+        margin: 0 auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        text-align: center;
+        position: relative;
+    }
+
+    nav ul {
+        padding: 0;
+        margin: 0 auto;
+        position: absolute;
+        top: 40%;
+        left: 5%;
+    }
+
+    nav ul li {
+        display: inline;
+        list-style: none;
+    }
+
+    li a {
+        font-size: 0.6rem;
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+        font-family: "Ubuntu", sans-serif;
+        margin-left: 15px;
+    }
+
+    li a:hover {
+        text-decoration: underline;
+    }
+
+    /****************************************************************/
+    /***********************   SLIDER / PRESENTATION  ***************/
+    /****************************************************************/
+
+    #accueil {
+        position: relative;
+        height: 200px;
+        overflow: hidden;
+    }
+
+    /* ************** Les éléments du slider ************** */
+
+
+    /* classe pour activer une image */
+    .figureSlider.active {
+        display: block;
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        filter: alpha(opacity=1);
+    }
+
+    /* cacher toutes les autres images */
+    .figureSlider {
+        position: absolute;
+        width: 100%;
+        -webkit-transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -o-transition: opacity 1s ease-in-out;
+        transition: opacity 1s ease-in-out;
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        filter: alpha(opacity=0);
+    }
+
+    .titre {
+        margin-bottom: 50px;
+        background-color: #2a66b5;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        border-top: 1px solid #000000;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        color: #FFFFFF;
+    }
+
+    /* Section Présentation */
+
+    #presentation {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .plumbering {
+        margin-bottom: 15px;
+    }
+
+    .pipes {
+        width: 50%;
+        overflow: hidden;
+        float: left;
+        margin-right: 10px;
+
+    }
+
+    .pipes img {
+        max-width: 100%;
+    }
+
+    .electricity {
+        margin-bottom: 15px;
+    }
+
+    .elec {
+        width: 50%;
+        overflow: hidden;
+        float: right;
+        margin-left: 10px;
+    }
+
+    .elec img {
+        max-width: 100%;
+    }
+
+    .heating {
+        margin-bottom: 15px;
+    }
+
+    .boiler {
+        width: 50%;
+        overflow: hidden;
+        float: left;
+        margin-right: 10px;
+    }
+
+    .boiler img {
+        max-width: 100%;
+    }
+
+    /* Bannière Logos partenaires */
+
+    .banner {
+        height: 100px;
+        border-top: solid #7510f7 1px;
+        border-bottom: solid #7510f7 1px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner img {
+        height: 50px;
+    }
+
+    
+    /* SECTION CONTACT */
+    
+    #contact {
+        text-align: center;
+    }
+
+    .titreContact h2 {
+        font-size: 1.7rem;
+        color: #000000;
+    }
+
+    .titreContact p {
+        font-size: 0.7em;
+        color: #000000;
+    }
+
+    .formulaire {
+        margin-top: 50px;
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    form input {
+        height: 20px;
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+
+    form textarea {
+        height: 125px;
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+
+    form label {
+        font-size: 1.5em;
+    }
+
+    #name,
+    #mail,
+    #subject,
+    #message {
+        width: 100%;
+    }
+
+    form fieldset {
+        padding: 0 20px 20px 20px;
+        margin-bottom: 10px;
+        border: 1px solid #7510f7;
+    }
+
+    form legend {
+        font-size: 1.8em;
+    }
+
+    #submit {
+        font-size: 1em;
+        height: 25px;
+    }
+
+    .adresse h3 {
+        font-size: 2rem;
+        margin-bottom: 25px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+    /* Footer */
+
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: blue;
+    }
+
+    .copyright {
+        color: #000000;
+        font-size: 0.5rem;
+    }
+
+    
+
+}
+
+/************************************************************/
+/******* CSS À APPLIQUER AU ÉCRAN ENTRE 1401px et 2000px ******/
+/************************************************************/
+
+
+@media screen and (min-width: 1401px) and (max-width: 2000px) {
+
+    /* HEADER */
+
+    header {
+        display: flex;
+        position: relative;
+        align-items: flex-start;
+        border-bottom: 1px solid #000000;
+    }
+
+    .logosHeader {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .fas.fa-bars {
+        display: none;
+        position: absolute;
+        top: 25%;
+        right: 10%;
+        font-size: 0.8rem;
+        transition-duration: 0.5s;
+        /* transition pour la rotation */
+        transition-timing-function: ease-in-out;
+    }
+
+    /* classe qui permet la rotation du font-awesome avec le script Js */
+    .rotated {
+        -webkit-transform: rotate(90deg);
+        /* Chrome, Safari 3.1+ */
+        -moz-transform: rotate(90deg);
+        /* Firefox 3.5-15 */
+        -ms-transform: rotate(90deg);
+        /* IE 9 */
+        -o-transform: rotate(90deg);
+        /* Opera 10.50-12.00 */
+        transform: rotate(90deg);
+        /* Firefox 16+, IE 10+, Opera 12.10+ */
+    }
+
+    header img {
+        height: 40px;
+        width: auto;
+    }
+
+    nav {
+        width: 100%;
+        height: 60px;
+        margin: 0 auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        text-align: center;
+        position: relative;
+    }
+
+    nav ul {
+        padding: 0;
+        margin: 0 auto;
+        position: absolute;
+        top: 40%;
+        left: 5%;
+    }
+
+    nav ul li {
+        display: inline;
+        list-style: none;
+    }
+
+    li a {
+        font-size: 0.6rem;
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+        font-family: "Ubuntu", sans-serif;
+        margin-left: 15px;
+    }
+
+    li a:hover {
+        text-decoration: underline;
+    }
+
+    /****************************************************************/
+    /***********************   SLIDER / PRESENTATION  ***************/
+    /****************************************************************/
+
+    #accueil {
+        position: relative;
+        height: 200px;
+        overflow: hidden;
+    }
+
+    /* ************** Les éléments du slider ************** */
+
+
+    /* classe pour activer une image */
+    .figureSlider.active {
+        display: block;
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        filter: alpha(opacity=1);
+    }
+
+    /* cacher toutes les autres images */
+    .figureSlider {
+        position: absolute;
+        width: 100%;
+        -webkit-transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -o-transition: opacity 1s ease-in-out;
+        transition: opacity 1s ease-in-out;
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        filter: alpha(opacity=0);
+    }
+
+    .titre {
+        margin-bottom: 50px;
+        background-color: #2a66b5;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        border-top: 1px solid #000000;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        color: #FFFFFF;
+    }
+
+    /* Section Présentation */
+
+    #presentation {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .plumbering {
+        margin-bottom: 15px;
+    }
+
+    .pipes {
+        width: 50%;
+        overflow: hidden;
+        float: left;
+        margin-right: 10px;
+
+    }
+
+    .pipes img {
+        max-width: 100%;
+    }
+
+    .electricity {
+        margin-bottom: 15px;
+    }
+
+    .elec {
+        width: 50%;
+        overflow: hidden;
+        float: right;
+        margin-left: 10px;
+    }
+
+    .elec img {
+        max-width: 100%;
+    }
+
+    .heating {
+        margin-bottom: 15px;
+    }
+
+    .boiler {
+        width: 50%;
+        overflow: hidden;
+        float: left;
+        margin-right: 10px;
+    }
+
+    .boiler img {
+        max-width: 100%;
+    }
+
+    /* Bannière Logos partenaires */
+
+    .banner {
+        height: 100px;
+        border-top: solid #7510f7 1px;
+        border-bottom: solid #7510f7 1px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner img {
+        height: 50px;
+    }
+
+    
+    /* SECTION CONTACT */
+    
+    #contact {
+        text-align: center;
+    }
+
+    .titreContact h2 {
+        font-size: 1.7rem;
+        color: #000000;
+    }
+
+    .titreContact p {
+        font-size: 0.7em;
+        color: #000000;
+    }
+
+    .formulaire {
+        margin-top: 50px;
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    form input {
+        height: 20px;
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+
+    form textarea {
+        height: 125px;
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+
+    form label {
+        font-size: 1.5em;
+    }
+
+    #name,
+    #mail,
+    #subject,
+    #message {
+        width: 100%;
+    }
+
+    form fieldset {
+        padding: 0 20px 20px 20px;
+        margin-bottom: 10px;
+        border: 1px solid #7510f7;
+    }
+
+    form legend {
+        font-size: 1.8em;
+    }
+
+    #submit {
+        font-size: 1em;
+        height: 25px;
+    }
+
+    .adresse h3 {
+        font-size: 2rem;
+        margin-bottom: 25px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+    /* Footer */
+
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: blue;
+    }
+
+    .copyright {
+        color: #000000;
+        font-size: 0.5rem;
+    }
+
+    
+
+}
+
+/************************************************************/
+/******* CSS À APPLIQUER AU ÉCRAN ENTRE 2001px et 2560px ******/
+/************************************************************/
+
+
+@media screen and (min-width: 2001px) and (max-width: 2560px) {
+
+    /* HEADER */
+
+    header {
+        display: flex;
+        position: relative;
+        align-items: flex-start;
+        border-bottom: 1px solid #000000;
+    }
+
+    .logosHeader {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .fas.fa-bars {
+        display: none;
+        position: absolute;
+        top: 25%;
+        right: 10%;
+        font-size: 0.8rem;
+        transition-duration: 0.5s;
+        /* transition pour la rotation */
+        transition-timing-function: ease-in-out;
+    }
+
+    /* classe qui permet la rotation du font-awesome avec le script Js */
+    .rotated {
+        -webkit-transform: rotate(90deg);
+        /* Chrome, Safari 3.1+ */
+        -moz-transform: rotate(90deg);
+        /* Firefox 3.5-15 */
+        -ms-transform: rotate(90deg);
+        /* IE 9 */
+        -o-transform: rotate(90deg);
+        /* Opera 10.50-12.00 */
+        transform: rotate(90deg);
+        /* Firefox 16+, IE 10+, Opera 12.10+ */
+    }
+
+    header img {
+        height: 40px;
+        width: auto;
+    }
+
+    nav {
+        width: 100%;
+        height: 60px;
+        margin: 0 auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        text-align: center;
+        position: relative;
+    }
+
+    nav ul {
+        padding: 0;
+        margin: 0 auto;
+        position: absolute;
+        top: 40%;
+        left: 5%;
+    }
+
+    nav ul li {
+        display: inline;
+        list-style: none;
+    }
+
+    li a {
+        font-size: 0.6rem;
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+        font-family: "Ubuntu", sans-serif;
+        margin-left: 15px;
+    }
+
+    li a:hover {
+        text-decoration: underline;
+    }
+
+    /****************************************************************/
+    /***********************   SLIDER / PRESENTATION  ***************/
+    /****************************************************************/
+
+    #accueil {
+        position: relative;
+        height: 200px;
+        overflow: hidden;
+    }
+
+    /* ************** Les éléments du slider ************** */
+
+
+    /* classe pour activer une image */
+    .figureSlider.active {
+        display: block;
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        filter: alpha(opacity=1);
+    }
+
+    /* cacher toutes les autres images */
+    .figureSlider {
+        position: absolute;
+        width: 100%;
+        -webkit-transition: opacity 1s ease-in-out;
+        -moz-transition: opacity 1s ease-in-out;
+        -o-transition: opacity 1s ease-in-out;
+        transition: opacity 1s ease-in-out;
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        filter: alpha(opacity=0);
+    }
+
+    .titre {
+        margin-bottom: 50px;
+        background-color: #2a66b5;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        border-top: 1px solid #000000;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        color: #FFFFFF;
+    }
+
+    /* Section Présentation */
+
+    #presentation {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .plumbering {
+        margin-bottom: 15px;
+    }
+
+    .pipes {
+        width: 50%;
+        overflow: hidden;
+        float: left;
+        margin-right: 10px;
+
+    }
+
+    .pipes img {
+        max-width: 100%;
+    }
+
+    .electricity {
+        margin-bottom: 15px;
+    }
+
+    .elec {
+        width: 50%;
+        overflow: hidden;
+        float: right;
+        margin-left: 10px;
+    }
+
+    .elec img {
+        max-width: 100%;
+    }
+
+    .heating {
+        margin-bottom: 15px;
+    }
+
+    .boiler {
+        width: 50%;
+        overflow: hidden;
+        float: left;
+        margin-right: 10px;
+    }
+
+    .boiler img {
+        max-width: 100%;
+    }
+
+    /* Bannière Logos partenaires */
+
+    .banner {
+        height: 100px;
+        border-top: solid #7510f7 1px;
+        border-bottom: solid #7510f7 1px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner img {
+        height: 50px;
+    }
+
+    
+    /* SECTION CONTACT */
+    
+    #contact {
+        text-align: center;
+    }
+
+    .titreContact h2 {
+        font-size: 1.7rem;
+        color: #000000;
+    }
+
+    .titreContact p {
+        font-size: 0.7em;
+        color: #000000;
+    }
+
+    .formulaire {
+        margin-top: 50px;
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    form input {
+        height: 20px;
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+
+    form textarea {
+        height: 125px;
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+
+    form label {
+        font-size: 1.5em;
+    }
+
+    #name,
+    #mail,
+    #subject,
+    #message {
+        width: 100%;
+    }
+
+    form fieldset {
+        padding: 0 20px 20px 20px;
+        margin-bottom: 10px;
+        border: 1px solid #7510f7;
+    }
+
+    form legend {
+        font-size: 1.8em;
+    }
+
+    #submit {
+        font-size: 1em;
+        height: 25px;
+    }
+
+    .adresse h3 {
+        font-size: 2rem;
+        margin-bottom: 25px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+    /* Footer */
+
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: blue;
+    }
+
+    .copyright {
+        color: #000000;
+        font-size: 0.5rem;
+    }
+
+    
+
+}
