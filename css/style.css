@@ -16,7 +16,9 @@ section {
     margin: 0;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -31,6 +33,14 @@ hr {
     width: 90%;
     height: 2px;
     margin: auto;
+}
+
+#texteMentionsLegales {
+    margin: 50px;
+}
+
+.titreMentions {
+    text-align: center;
 }
 
 
@@ -159,7 +169,7 @@ hr {
         margin-bottom: 50px;
         background-color: #2a66b5;
         display: flex;
-        align-items:center;
+        align-items: center;
         justify-content: center;
         border-top: 1px solid #000000;
     }
@@ -238,9 +248,9 @@ hr {
         height: 50px;
     }
 
-    
+
     /* SECTION CONTACT */
-    
+
     #contact {
         text-align: center;
     }
@@ -313,7 +323,7 @@ hr {
 
     /* Footer */
 
-    footer{
+    footer {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -326,7 +336,7 @@ hr {
         text-transform: bold;
     }
 
-    
+
 
 }
 
@@ -455,7 +465,7 @@ hr {
         margin-bottom: 50px;
         background-color: #2a66b5;
         display: flex;
-        align-items:center;
+        align-items: center;
         justify-content: center;
         border-top: 1px solid #000000;
     }
@@ -534,9 +544,9 @@ hr {
         height: 50px;
     }
 
-    
+
     /* SECTION CONTACT */
-    
+
     #contact {
         text-align: center;
     }
@@ -609,7 +619,7 @@ hr {
 
     /* Footer */
 
-    footer{
+    footer {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -621,7 +631,7 @@ hr {
         font-size: 0.5rem;
     }
 
-    
+
 
 }
 
@@ -750,7 +760,7 @@ hr {
         margin-bottom: 50px;
         background-color: #2a66b5;
         display: flex;
-        align-items:center;
+        align-items: center;
         justify-content: center;
         border-top: 1px solid #000000;
     }
@@ -829,9 +839,9 @@ hr {
         height: 50px;
     }
 
-    
+
     /* SECTION CONTACT */
-    
+
     #contact {
         text-align: center;
     }
@@ -904,7 +914,7 @@ hr {
 
     /* Footer */
 
-    footer{
+    footer {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -916,7 +926,7 @@ hr {
         font-size: 0.5rem;
     }
 
-    
+
 
 }
 
@@ -1045,7 +1055,7 @@ hr {
         margin-bottom: 50px;
         background-color: #2a66b5;
         display: flex;
-        align-items:center;
+        align-items: center;
         justify-content: center;
         border-top: 1px solid #000000;
     }
@@ -1124,9 +1134,9 @@ hr {
         height: 50px;
     }
 
-    
+
     /* SECTION CONTACT */
-    
+
     #contact {
         text-align: center;
     }
@@ -1199,7 +1209,7 @@ hr {
 
     /* Footer */
 
-    footer{
+    footer {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1211,7 +1221,7 @@ hr {
         font-size: 0.5rem;
     }
 
-    
+
 
 }
 
@@ -1340,7 +1350,7 @@ hr {
         margin-bottom: 50px;
         background-color: #2a66b5;
         display: flex;
-        align-items:center;
+        align-items: center;
         justify-content: center;
         border-top: 1px solid #000000;
     }
@@ -1419,9 +1429,9 @@ hr {
         height: 50px;
     }
 
-    
+
     /* SECTION CONTACT */
-    
+
     #contact {
         text-align: center;
     }
@@ -1494,7 +1504,7 @@ hr {
 
     /* Footer */
 
-    footer{
+    footer {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1506,7 +1516,7 @@ hr {
         font-size: 0.5rem;
     }
 
-    
+
 
 }
 
@@ -1635,7 +1645,7 @@ hr {
         margin-bottom: 50px;
         background-color: #2a66b5;
         display: flex;
-        align-items:center;
+        align-items: center;
         justify-content: center;
         border-top: 1px solid #000000;
     }
@@ -1714,9 +1724,9 @@ hr {
         height: 50px;
     }
 
-    
+
     /* SECTION CONTACT */
-    
+
     #contact {
         text-align: center;
     }
@@ -1789,7 +1799,7 @@ hr {
 
     /* Footer */
 
-    footer{
+    footer {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1801,6 +1811,6 @@ hr {
         font-size: 0.5rem;
     }
 
-    
+
 
 }
