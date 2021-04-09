@@ -317,12 +317,13 @@ hr {
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: blue;
+        background-color: #2a66b5;
     }
 
     .copyright {
-        color: #000000;
+        color: #FFFFFF;
         font-size: 0.5rem;
+        text-transform: bold;
     }
 
     
